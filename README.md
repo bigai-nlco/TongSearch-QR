@@ -1,1 +1,22 @@
 # TongSearch Reasoner
+---
+TongSearch Reasoner is the first query reasoner model family specifically trained for query reasoning in reasoning-intensive retrieval tasks. The family includes two checkpoints in different parameter size: TongSearch Reasoner 1.5B and TongSearch Reasoner 7B. With BM25 as retriever, TongSearch Reasoner can perform closely to the state-of-the-art large reasoning models e.g. DeepSeek-R1 or QwQ-32B. Comparing with those large-scale embedders trained for reasoning-intensive task, the approaches of using BM25 retrievers with TongSearch Reasoner reasoning is more effective and efficient since there is no need to encode the large-scale retrieval documents with large embedding models.
+
+- Technical Report: [TongSearch Reasoner Technical Report](https://bigai-nlco.notion.site/TongSearch-Reasoner-1d6df56b182c80349d71ebfca4c55c1d)
+- Models: [TongSearch Reasoner 7B](https://huggingface.co/qratosone/TongSearch_Reasoner_7B),[TongSearch Reasoner 1.5B](https://huggingface.co/qratosone/TongSearch_Reasoner_1_5B_V2_select)
+
+## Evaluating on BRIGHT Benchmark
+---
+We provide a group of scripts for evaluating the overall performance on [BRIGHT Benchmark](https://brightbenchmark.github.io/). Here are the instructions of evaluation:
+- Install `vllm==0.8.4` and `pytrec_eval` first.
+- Install the other dependencies requrired by the evaluation scripts of BRIGHT benchmark. More details can be found at the repo of BRIGHT Benchmark [here](https://github.com/xlang-ai/BRIGHT).
+- Replace the settings in `Evaluation/run_evaluation.sh` with your own settings: `TONGSEARCH_REASONER_PATH` for the path of TongSearch Reasoner model, `BRIGHT_PATH` for the path of the BRIGHT dataset, and `REASONER_FILE_NAME` for the filename of saving reasoned queries.
+- Run `Evaluation/run_evaluation.sh`
+
+## Citation
+---
+@misc{tongsearch,
+	title = {TongSearch Reasoner},
+	author = {Qin, Xubo and Bai, Jun and Li, Jiaqi and Jia, Zixia and Zheng, Zilong},
+	url = {https://github.com/bigai-nlco/TongSearch_Reasoner}
+}

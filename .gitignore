@@ -1,0 +1,119 @@
+# -------------------------
+# Python general
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.Python
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pyenv
+.python-version
+
+# Pyright / mypy
+.mypy_cache/
+.pyre/
+.pytype/
+
+# -------------------------
+# IDEs
+# -------------------------
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+
+# -------------------------
+# Jupyter Notebooks
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Deep Learning - datasets, models, logs
+# -------------------------
+# TensorBoard logs
+logs/
+runs/
+
+# Checkpoints
+checkpoints/
+*.ckpt
+*.h5
+*.pth
+*.pt
+*.pkl
+*.npz
+
+# Dataset cache
+data/
+dataset/
+datasets/
+*.zip
+*.tar.gz
+*.tar
+*.tgz
+
+# HuggingFace transformers cache
+~/.cache/huggingface/
+huggingface_cache/
+
+# PyTorch Lightning (optional)
+lightning_logs/
+
+# FastAI
+tmp/
+tmp_models/
+
+# TFRecords (optional for Tensorflow users)
+*.tfrecord
+
+# -------------------------
+# Docker / CI
+# -------------------------
+docker-compose.override.yml
+.env
+.env.*
+
+# -------------------------
+# OS generated files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Logs and temporary files
+# -------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# -------------------------
+# Others
+# -------------------------
+# compiled python
+*.pyo
+
+# IPython
+.profile_default/
+ipython_config.py
+
+# Cython debug symbols
+cython_debug/

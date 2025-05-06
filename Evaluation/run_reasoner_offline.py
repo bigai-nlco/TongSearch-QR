@@ -1,5 +1,5 @@
 from datasets import load_dataset
-from config import TONGSEARCH_REASONER_PATH,USE_THINK,BRIGHT_DATASET_PATH
+from config import TONGSEARCH_REASONER_PATH,USE_THINK,BRIGHT_DATASET_PATH,REASONED_FILE_NAME
 from vllm_model import VllmModel
 
 if __name__=='__main__':
@@ -14,11 +14,7 @@ if __name__=='__main__':
     model.think_flag=think_flag
     import os,json
     query_map={}
-    if '/' in TONGSEARCH_REASONER_PATH:
-        reasoner_name=TONGSEARCH_REASONER_PATH.split('/')[-1]
-    else:
-        reasoner_name=TONGSEARCH_REASONER_PATH
-    filename=f"{reasoner_name}-reasoned_query.json"
+    filename=f"{REASONED_FILE_NAME}-reasoned_query.json"
     if os.path.exists(filename):
         with open(filename) as f:
             query_map=json.load(f)

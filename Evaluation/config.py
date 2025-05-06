@@ -7,4 +7,5 @@ VLLM_GPU_MEMORY_UTILIZATION = 0.5 #这里设置每块卡最大用多大比例的
 import sys
 TONGSEARCH_REASONER_PATH=sys.argv[1]
 BRIGHT_DATASET_PATH=sys.argv[2]
+REASONED_FILE_NAME=sys.argv[3]
 USE_THINK=False

@@ -28,23 +28,27 @@ if __name__=='__main__':
     parser.add_argument('--debug', action='store_true')
     parser.add_argument('--ignore_cache', action='store_true')
     parser.add_argument('--reasoner_file', type=str, default=None)
+    parser.add_argument('--dataset_path', type=str, default=None)
     args = parser.parse_args()
     args.output_dir = os.path.join(args.output_dir,f"{args.task}_{args.model}_long_{args.long_context}")
     if not os.path.isdir(args.output_dir):
         os.makedirs(args.output_dir)
     score_file_path = os.path.join(args.output_dir,f'score.json')
-
+    if args.dataset_path is not None:
+        dataset_path=args.dataset_path
+    else:
+        dataset_path='xlangai/BRIGHT'
     if args.input_file is not None:
         with open(args.input_file) as f:
             examples = json.load(f)
     elif args.reasoning is not None:
-        examples = load_dataset('DATASET/', f"{args.reasoning}_reason", cache_dir=args.cache_dir)[args.task]
+        examples = load_dataset(dataset_path, f"{args.reasoning}_reason", cache_dir=args.cache_dir)[args.task]
     else:
-        examples = load_dataset('DATASET/', 'examples',cache_dir=args.cache_dir)[args.task]
+        examples = load_dataset(dataset_path, 'examples',cache_dir=args.cache_dir)[args.task]
     if args.long_context:
-        doc_pairs = load_dataset('DATASET/', 'long_documents',cache_dir=args.cache_dir)[args.task]
+        doc_pairs = load_dataset(dataset_path, 'long_documents',cache_dir=args.cache_dir)[args.task]
     else:
-        doc_pairs = load_dataset('DATASET/', 'documents',cache_dir=args.cache_dir)[args.task]
+        doc_pairs = load_dataset(dataset_path, 'documents',cache_dir=args.cache_dir)[args.task]
     doc_ids = []
     documents = []
     for dp in doc_pairs:

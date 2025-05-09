@@ -1,4 +1,5 @@
 # TongSearch Reasoner
+
 **Xubo Qin, Jun Bai, Jiaqi Li, Zixia Jia, Zilong Zheng**
 Natural Language and Conversational AI Lab (NLCo), Beijing Institute for General Artificial Intelligence (BIGAI)
 ---

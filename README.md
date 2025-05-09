@@ -1,4 +1,7 @@
 # TongSearch Reasoner
+**Xubo Qin, Jun Bai, Jiaqi Li, Zixia Jia, Zilong Zheng**
+Natural Language and Conversational AI Lab (NLCo), Beijing Institute for General Artificial Intelligence (BIGAI)
+---
 TongSearch Reasoner is the first query reasoner model family specifically trained for query reasoning in reasoning-intensive retrieval tasks. The family includes two checkpoints in different parameter size: TongSearch Reasoner 1.5B and TongSearch Reasoner 7B. With BM25 as retriever, TongSearch Reasoner can perform closely to the state-of-the-art large reasoning models e.g. DeepSeek-R1 or QwQ-32B. Comparing with those large-scale embedders trained for reasoning-intensive task, the approaches of using BM25 retrievers with TongSearch Reasoner reasoning is more effective and efficient since there is no need to encode the large-scale retrieval documents with large embedding models.
 
 - Technical Report: [TongSearch Reasoner Technical Report](https://bigai-nlco.notion.site/TongSearch-Reasoner-1d6df56b182c80349d71ebfca4c55c1d)

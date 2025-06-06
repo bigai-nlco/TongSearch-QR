@@ -4,7 +4,7 @@
   <img src="img/RQR-pic.png" width="50%">
 </p>
 
-- Website: [TongSearch QR Website](https://bigai-nlco.notion.site/TongSearch-Reasoner-1d6df56b182c80349d71ebfca4c55c1d)
+- Website: [TongSearch QR Website](https://bigai-nlco.notion.site/TongSearch-QR-Reinforced-Query-Reasoning-for-Retrieval-Tasks-1d6df56b182c80349d71ebfca4c55c1d)
 - Models: [TongSearch QR 7B](https://huggingface.co/qratosone/TongSearch_Reasoner_7B), [TongSearch QR 1.5B](https://huggingface.co/qratosone/TongSearch_Reasoner_1_5B_V2_select)
 
 ## Introduction
@@ -38,7 +38,7 @@ sh run_evaluation_with_reasoned_query.sh reasoned_queries/1_5b_reasoned_query.js
 ## Citation
 ```
 @misc{tongsearch,
-	title = {TongSearch Reasoner},
+	title = {TongSearch QR: Reinforced Query Reasoning for Retrieval},
 	author = {Qin, Xubo and Bai, Jun and Li, Jiaqi and Jia, Zixia and Zheng, Zilong},
 	url = {https://github.com/bigai-nlco/TongSearch_Reasoner}
 }

@@ -1,4 +1,4 @@
-<h3 align="center">TongSearch QR: Reinforced Query Reasoning for Retrieval</h3>
+<h1 align="center">TongSearch QR: Reinforced Query Reasoning for Retrieval</h3>
 
 <p align="center">
   <img src="img/RQR-pic.png" width="50%">

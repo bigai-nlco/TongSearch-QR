@@ -1,6 +1,6 @@
 <h3 align="center">TongSearch QR: Reinforced Query Reasoning for Retrieval</h3>
 
-<img src='img/RQR-pic.png',width="50%">
+<img src='img/RQR-pic.png' width="50%">
 ## Introduction
 **TongSearch QR** (Previously known as **TongSearch Reasoner**) is the first query reasoning model family specifically trained for query reasoning in reasoning-intensive retrieval tasks. "QR" is short of **query reasoning**. The family includes two checkpoints in different parameter size: TongSearch QR 1.5B and TongSearch QR 7B. With BM25 as retriever, TongSearch Reasoner can perform closely to the state-of-the-art large reasoning models e.g. DeepSeek-R1 or QwQ-32B. Comparing with those large-scale embedders trained for reasoning-intensive task, the approaches of using BM25 retrievers with TongSearch QR reasoning is more effective and efficient since there is no need to encode the large-scale retrieval documents with large embedding models. Besides, TongSearch QR can also work with some retrievers specifically trained for reasoning-intensive retrieval tasks, e.g., [ReasonIR](https://github.com/facebookresearch/ReasonIR) to achieve better results.
 

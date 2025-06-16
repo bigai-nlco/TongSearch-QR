@@ -8,7 +8,7 @@
 </p>
 
 - Website: [TongSearch QR Website](https://bigai-nlco.notion.site/TongSearch-QR-Reinforced-Query-Reasoning-for-Retrieval-Tasks-1d6df56b182c80349d71ebfca4c55c1d)
-- Models: [TongSearch QR 7B](https://huggingface.co/qratosone/TongSearch_Reasoner_7B), [TongSearch QR 1.5B](https://huggingface.co/qratosone/TongSearch_Reasoner_1_5B_V2_select)
+- Models: [TongSearch](https://huggingface.co/TongSearch)
 
 ## Introduction
 

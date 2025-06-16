@@ -1,7 +1,4 @@
 <h1 align="center">TongSearch QR: Reinforced Query Reasoning for Retrieval</h3>
-<div align="center">
- <a href="https://arxiv.org/abs/2506.11603"><img src="https://img.shields.io/badge/Arxiv-LatentSeek-b31b1b.svg?logo=arXiv" alt=""></a>
-</div>
 
 <p align="center">
   <img src="img/RQR-pic.png" width="75%">

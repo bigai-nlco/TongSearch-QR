@@ -1,8 +1,0 @@
-{
-  "instructions": {
-    "query": "Represent this {task} post for searching relevant passages: "
-  },
-  "instructions_long": {
-    "query": "Represent this {task} post for searching relevant documents: "
-  }
-}

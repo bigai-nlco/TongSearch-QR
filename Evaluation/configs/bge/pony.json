@@ -1,8 +1,0 @@
-{
-  "instructions": {
-    "query": "Represent this Pony question for searching relevant passages: "
-  },
-  "instructions_long": {
-    "query": "Represent this Pony question for searching relevant documents: "
-  }
-}

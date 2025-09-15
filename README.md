@@ -32,8 +32,7 @@
 **TongSearch QR** (Previously known as **TongSearch Reasoner**) is the first query reasoning model family adapted for query reasoning in **reasoning-intensive retrieval** tasks. "QR" is short of **query reasoning**. Currently, it includes: **TongSearch QR 1.5B** and **TongSearch QR 7B**.
 
 <p align="center">
-   <img src="assets/retriever.png" width="37.%" style="position:relative; top:-22px;">
-   <img src="assets/efficiency.png" width="59%">
+   <img src="assets/comparison.png" width="90%">
 </p>
 
 When equipped with standard retrievers, TongSearch-QR surpasses GPT-4 on BRIGHT (left figure) and achieves performance comparable to state-of-the-art large reasoning models, such as DeepSeek-R1 and QwQ-32B, while maintaining superior efficiency (right figure).
